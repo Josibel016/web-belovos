@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 24px;
+    
+    
+}
+
+.cabecalho-imagem{
+    height: 150px;
+    margin-bottom: -75px;
+    gap: 50px;
+   
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 10px 30px;
+    align-items: flex-start;
+   
+  
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 1px solid #E8E8CC;
+   
+}
+
+.conteudo-principal {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+  }
+  
+.conteudo-principal-escrito{
+display: flex;
+flex-direction: column;
+gap: 32px;
+
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    color: #FFCC1D;
+    font-weight: 400;
+    font-size: 4rem;
+
+}
+
+
+.conteudo-principal-escrito-imgagem{
+    margin-top: 3%;
+    width: 35%;
+    border-radius: 10%;
+    border: solid 3px #2F2325;
+   
+}
+
+.conteudo-principal-escrito-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color: #E8E8CC;
+    width: 180px;
+    height: 67px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20%;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2F2325;
+    align-self: flex-end;
+}
+
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #E8E8CC;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    color: #FFCC1D;
+    font-weight: 400;
+    font-size: 1.875rem;
+    margin-bottom: 14px;
+
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+    font-weight: 400;
+    font-size: 1rem;  
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2325;
+    padding: 24px;
+}
+
+.rodape-titulo {
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.rodape-link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid #2F2325;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10%;
+    width: 200px;
+    height: 80px;
+    background-color: #E8E8CC;
+    
+}
+
+.link-img{
+    width: 20%;
+    margin: 15px;
+}
+  
+.temporario {
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 900px){
+    .conteudo-principal{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    }
+#titulo{
+    font-family: 'Righteous', cursive;
+    color: #FFCC1D;
+    font-weight: 400;
+    margin-left: 7%;
+}
+
+#subtitulo{
+
+    font-family: 'Sarala', sans-serif;
+    color: #FFCC1D;
+    font-weight: 400;
+    margin-left: 17%;
+    font-size: 1.25rem;
+
+}
+
+#check{
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+body{ /*arrumar / modificar para nao ficar igual ao index, olhar rem e em */
+    background-color: #F0F8FF;
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    font-family: 'Sarala', sans-serif;
+    color: #E8E8CC;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
+/*https://github.com/rafaballerini/Formulario/commit/fd9fc4c7742977dda273363c32a5b7c35b422bad#diff-b4a3758af6d77b288bc5fef88969bdb43a78a72e989e3371c2b8cf14bb0228cb/
